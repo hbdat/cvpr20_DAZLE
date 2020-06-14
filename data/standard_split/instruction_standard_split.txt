@@ -1,0 +1,1 @@
+Please download and extract standard_split.zip (http://datasets.d2.mpi-inf.mpg.de/xian/standard_split.zip) into this folder. This file contains the standard splits for CUB needed to run DAZLE_CUB_SS.ipynb

@@ -1,0 +1,1 @@
+Please download and extract SUNAttributeDB_Images.tar.gz (http://cs.brown.edu/~gmpatter/Attributes/SUNAttributeDB_Images.tar.gz) into this folder in order to run ./extract_feature/extract_feature_map_ResNet_101_SUN.py

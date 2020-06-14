@@ -1,0 +1,1 @@
+Please download and extract CUB_200_2011.tgz (http://www.vision.caltech.edu/visipedia-data/CUB-200-2011/CUB_200_2011.tgz) into this folder in order to run ./extract_feature/extract_feature_map_ResNet_101_CUB.py

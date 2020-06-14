@@ -1,0 +1,313 @@
+,idx,des,new_des
+0,1,has_bill_shape::curved_(up_or_down),bill shape curved 
+1,2,has_bill_shape::dagger,bill shape dagger
+2,3,has_bill_shape::hooked,bill shape hooked
+3,4,has_bill_shape::needle,bill shape needle
+4,5,has_bill_shape::hooked_seabird,bill shape hooked seabird
+5,6,has_bill_shape::spatulate,bill shape broad
+6,7,has_bill_shape::all-purpose,bill shape all purpose
+7,8,has_bill_shape::cone,bill shape cone
+8,9,has_bill_shape::specialized,bill shape specialized
+9,10,has_wing_color::blue,wing color blue
+10,11,has_wing_color::brown,wing color brown
+11,12,has_wing_color::iridescent,wing color iridescent
+12,13,has_wing_color::purple,wing color purple
+13,14,has_wing_color::rufous,wing color rufous
+14,15,has_wing_color::grey,wing color gray
+15,16,has_wing_color::yellow,wing color yellow
+16,17,has_wing_color::olive,wing color olive
+17,18,has_wing_color::green,wing color green
+18,19,has_wing_color::pink,wing color pink
+19,20,has_wing_color::orange,wing color orange
+20,21,has_wing_color::black,wing color black
+21,22,has_wing_color::white,wing color white
+22,23,has_wing_color::red,wing color red
+23,24,has_wing_color::buff,wing color buff
+24,25,has_upperparts_color::blue,upper parts color blue
+25,26,has_upperparts_color::brown,upper parts color brown
+26,27,has_upperparts_color::iridescent,upper parts color iridescent
+27,28,has_upperparts_color::purple,upper parts color purple
+28,29,has_upperparts_color::rufous,upper parts color rufous
+29,30,has_upperparts_color::grey,upper parts color gray
+30,31,has_upperparts_color::yellow,upper parts color yellow
+31,32,has_upperparts_color::olive,upper parts color olive
+32,33,has_upperparts_color::green,upper parts color green
+33,34,has_upperparts_color::pink,upper parts color pink
+34,35,has_upperparts_color::orange,upper parts color orange
+35,36,has_upperparts_color::black,upper parts color black
+36,37,has_upperparts_color::white,upper parts color white
+37,38,has_upperparts_color::red,upper parts color red
+38,39,has_upperparts_color::buff,upper parts color buff
+39,40,has_underparts_color::blue,underparts color blue
+40,41,has_underparts_color::brown,underparts color brown
+41,42,has_underparts_color::iridescent,underparts color iridescent
+42,43,has_underparts_color::purple,underparts color purple
+43,44,has_underparts_color::rufous,underparts color rufous
+44,45,has_underparts_color::grey,underparts color gray
+45,46,has_underparts_color::yellow,underparts color yellow
+46,47,has_underparts_color::olive,underparts color olive
+47,48,has_underparts_color::green,underparts color green
+48,49,has_underparts_color::pink,underparts color pink
+49,50,has_underparts_color::orange,underparts color orange
+50,51,has_underparts_color::black,underparts color black
+51,52,has_underparts_color::white,underparts color white
+52,53,has_underparts_color::red,underparts color red
+53,54,has_underparts_color::buff,underparts color buff
+54,55,has_breast_pattern::solid,breast pattern solid
+55,56,has_breast_pattern::spotted,breast pattern spotted
+56,57,has_breast_pattern::striped,breast pattern striped
+57,58,has_breast_pattern::multi-colored,breast pattern multi colored
+58,59,has_back_color::blue,back color blue
+59,60,has_back_color::brown,back color brown
+60,61,has_back_color::iridescent,back color iridescent
+61,62,has_back_color::purple,back color purple
+62,63,has_back_color::rufous,back color rufous
+63,64,has_back_color::grey,back color gray
+64,65,has_back_color::yellow,back color yellow
+65,66,has_back_color::olive,back color olive
+66,67,has_back_color::green,back color green
+67,68,has_back_color::pink,back color pink
+68,69,has_back_color::orange,back color orange
+69,70,has_back_color::black,back color black
+70,71,has_back_color::white,back color white
+71,72,has_back_color::red,back color red
+72,73,has_back_color::buff,back color buff
+73,74,has_tail_shape::forked_tail,tail shape forked tail
+74,75,has_tail_shape::rounded_tail,tail shape rounded tail
+75,76,has_tail_shape::notched_tail,tail shape notched tail
+76,77,has_tail_shape::fan-shaped_tail,tail shape fan shaped tail
+77,78,has_tail_shape::pointed_tail,tail shape pointed tail
+78,79,has_tail_shape::squared_tail,tail shape squared tail
+79,80,has_upper_tail_color::blue,upper tail color blue
+80,81,has_upper_tail_color::brown,upper tail color brown
+81,82,has_upper_tail_color::iridescent,upper tail color iridescent
+82,83,has_upper_tail_color::purple,upper tail color purple
+83,84,has_upper_tail_color::rufous,upper tail color rufous
+84,85,has_upper_tail_color::grey,upper tail color gray
+85,86,has_upper_tail_color::yellow,upper tail color yellow
+86,87,has_upper_tail_color::olive,upper tail color olive
+87,88,has_upper_tail_color::green,upper tail color green
+88,89,has_upper_tail_color::pink,upper tail color pink
+89,90,has_upper_tail_color::orange,upper tail color orange
+90,91,has_upper_tail_color::black,upper tail color black
+91,92,has_upper_tail_color::white,upper tail color white
+92,93,has_upper_tail_color::red,upper tail color red
+93,94,has_upper_tail_color::buff,upper tail color buff
+94,95,has_head_pattern::spotted,head pattern spotted
+95,96,has_head_pattern::malar,head pattern malar
+96,97,has_head_pattern::crested,head pattern crested
+97,98,has_head_pattern::masked,head pattern masked
+98,99,has_head_pattern::unique_pattern,head pattern unique pattern
+99,100,has_head_pattern::eyebrow,head pattern eyebrow
+100,101,has_head_pattern::eyering,head pattern eyering
+101,102,has_head_pattern::plain,head pattern plain
+102,103,has_head_pattern::eyeline,head pattern eyeline
+103,104,has_head_pattern::striped,head pattern striped
+104,105,has_head_pattern::capped,head pattern capped
+105,106,has_breast_color::blue,breast color blue
+106,107,has_breast_color::brown,breast color brown
+107,108,has_breast_color::iridescent,breast color iridescent
+108,109,has_breast_color::purple,breast color purple
+109,110,has_breast_color::rufous,breast color rufous
+110,111,has_breast_color::grey,breast color gray
+111,112,has_breast_color::yellow,breast color yellow
+112,113,has_breast_color::olive,breast color olive
+113,114,has_breast_color::green,breast color green
+114,115,has_breast_color::pink,breast color pink
+115,116,has_breast_color::orange,breast color orange
+116,117,has_breast_color::black,breast color black
+117,118,has_breast_color::white,breast color white
+118,119,has_breast_color::red,breast color red
+119,120,has_breast_color::buff,breast color buff
+120,121,has_throat_color::blue,throat color blue
+121,122,has_throat_color::brown,throat color brown
+122,123,has_throat_color::iridescent,throat color iridescent
+123,124,has_throat_color::purple,throat color purple
+124,125,has_throat_color::rufous,throat color rufous
+125,126,has_throat_color::grey,throat color gray
+126,127,has_throat_color::yellow,throat color yellow
+127,128,has_throat_color::olive,throat color olive
+128,129,has_throat_color::green,throat color green
+129,130,has_throat_color::pink,throat color pink
+130,131,has_throat_color::orange,throat color orange
+131,132,has_throat_color::black,throat color black
+132,133,has_throat_color::white,throat color white
+133,134,has_throat_color::red,throat color red
+134,135,has_throat_color::buff,throat color buff
+135,136,has_eye_color::blue,eye color blue
+136,137,has_eye_color::brown,eye color brown
+137,138,has_eye_color::purple,eye color purple
+138,139,has_eye_color::rufous,eye color rufous
+139,140,has_eye_color::grey,eye color gray
+140,141,has_eye_color::yellow,eye color yellow
+141,142,has_eye_color::olive,eye color olive
+142,143,has_eye_color::green,eye color green
+143,144,has_eye_color::pink,eye color pink
+144,145,has_eye_color::orange,eye color orange
+145,146,has_eye_color::black,eye color black
+146,147,has_eye_color::white,eye color white
+147,148,has_eye_color::red,eye color red
+148,149,has_eye_color::buff,eye color buff
+149,150,has_bill_length::about_the_same_as_head,bill length about the same as head
+150,151,has_bill_length::longer_than_head,bill length longer than head
+151,152,has_bill_length::shorter_than_head,bill length shorter than head
+152,153,has_forehead_color::blue,forehead color blue
+153,154,has_forehead_color::brown,forehead color brown
+154,155,has_forehead_color::iridescent,forehead color iridescent
+155,156,has_forehead_color::purple,forehead color purple
+156,157,has_forehead_color::rufous,forehead color rufous
+157,158,has_forehead_color::grey,forehead color gray
+158,159,has_forehead_color::yellow,forehead color yellow
+159,160,has_forehead_color::olive,forehead color olive
+160,161,has_forehead_color::green,forehead color green
+161,162,has_forehead_color::pink,forehead color pink
+162,163,has_forehead_color::orange,forehead color orange
+163,164,has_forehead_color::black,forehead color black
+164,165,has_forehead_color::white,forehead color white
+165,166,has_forehead_color::red,forehead color red
+166,167,has_forehead_color::buff,forehead color buff
+167,168,has_under_tail_color::blue,under tail color blue
+168,169,has_under_tail_color::brown,under tail color brown
+169,170,has_under_tail_color::iridescent,under tail color iridescent
+170,171,has_under_tail_color::purple,under tail color purple
+171,172,has_under_tail_color::rufous,under tail color rufous
+172,173,has_under_tail_color::grey,under tail color gray
+173,174,has_under_tail_color::yellow,under tail color yellow
+174,175,has_under_tail_color::olive,under tail color olive
+175,176,has_under_tail_color::green,under tail color green
+176,177,has_under_tail_color::pink,under tail color pink
+177,178,has_under_tail_color::orange,under tail color orange
+178,179,has_under_tail_color::black,under tail color black
+179,180,has_under_tail_color::white,under tail color white
+180,181,has_under_tail_color::red,under tail color red
+181,182,has_under_tail_color::buff,under tail color buff
+182,183,has_nape_color::blue,nape color blue
+183,184,has_nape_color::brown,nape color brown
+184,185,has_nape_color::iridescent,nape color iridescent
+185,186,has_nape_color::purple,nape color purple
+186,187,has_nape_color::rufous,nape color rufous
+187,188,has_nape_color::grey,nape color gray
+188,189,has_nape_color::yellow,nape color yellow
+189,190,has_nape_color::olive,nape color olive
+190,191,has_nape_color::green,nape color green
+191,192,has_nape_color::pink,nape color pink
+192,193,has_nape_color::orange,nape color orange
+193,194,has_nape_color::black,nape color black
+194,195,has_nape_color::white,nape color white
+195,196,has_nape_color::red,nape color red
+196,197,has_nape_color::buff,nape color buff
+197,198,has_belly_color::blue,belly color blue
+198,199,has_belly_color::brown,belly color brown
+199,200,has_belly_color::iridescent,belly color iridescent
+200,201,has_belly_color::purple,belly color purple
+201,202,has_belly_color::rufous,belly color rufous
+202,203,has_belly_color::grey,belly color gray
+203,204,has_belly_color::yellow,belly color yellow
+204,205,has_belly_color::olive,belly color olive
+205,206,has_belly_color::green,belly color green
+206,207,has_belly_color::pink,belly color pink
+207,208,has_belly_color::orange,belly color orange
+208,209,has_belly_color::black,belly color black
+209,210,has_belly_color::white,belly color white
+210,211,has_belly_color::red,belly color red
+211,212,has_belly_color::buff,belly color buff
+212,213,has_wing_shape::rounded-wings,wing shape rounded wings
+213,214,has_wing_shape::pointed-wings,wing shape pointed wings
+214,215,has_wing_shape::broad-wings,wing shape broad wings
+215,216,has_wing_shape::tapered-wings,wing shape tapered wings
+216,217,has_wing_shape::long-wings,wing shape long wings
+217,218,has_size::large_(16_-_32_in),size large 
+218,219,has_size::small_(5_-_9_in),size small 
+219,220,has_size::very_large_(32_-_72_in),size very large 
+220,221,has_size::medium_(9_-_16_in),size medium 
+221,222,has_size::very_small_(3_-_5_in),size very small 
+222,223,has_shape::upright-perching_water-like,shape upright perching water like
+223,224,has_shape::chicken-like-marsh,shape chicken like marsh
+224,225,has_shape::long-legged-like,shape long legged like
+225,226,has_shape::duck-like,shape duck like
+226,227,has_shape::owl-like,shape owl like
+227,228,has_shape::gull-like,shape gull like
+228,229,has_shape::hummingbird-like,shape hummingbird like
+229,230,has_shape::pigeon-like,shape pigeon like
+230,231,has_shape::tree-clinging-like,shape tree clinging like
+231,232,has_shape::hawk-like,shape hawk like
+232,233,has_shape::sandpiper-like,shape sandpiper like
+233,234,has_shape::upland-ground-like,shape upland ground like
+234,235,has_shape::swallow-like,shape swallow like
+235,236,has_shape::perching-like,shape perching like
+236,237,has_back_pattern::solid,back pattern solid
+237,238,has_back_pattern::spotted,back pattern spotted
+238,239,has_back_pattern::striped,back pattern striped
+239,240,has_back_pattern::multi-colored,back pattern multi colored
+240,241,has_tail_pattern::solid,tail pattern solid
+241,242,has_tail_pattern::spotted,tail pattern spotted
+242,243,has_tail_pattern::striped,tail pattern striped
+243,244,has_tail_pattern::multi-colored,tail pattern multi colored
+244,245,has_belly_pattern::solid,belly pattern solid
+245,246,has_belly_pattern::spotted,belly pattern spotted
+246,247,has_belly_pattern::striped,belly pattern striped
+247,248,has_belly_pattern::multi-colored,belly pattern multi colored
+248,249,has_primary_color::blue,primary color blue
+249,250,has_primary_color::brown,primary color brown
+250,251,has_primary_color::iridescent,primary color iridescent
+251,252,has_primary_color::purple,primary color purple
+252,253,has_primary_color::rufous,primary color rufous
+253,254,has_primary_color::grey,primary color gray
+254,255,has_primary_color::yellow,primary color yellow
+255,256,has_primary_color::olive,primary color olive
+256,257,has_primary_color::green,primary color green
+257,258,has_primary_color::pink,primary color pink
+258,259,has_primary_color::orange,primary color orange
+259,260,has_primary_color::black,primary color black
+260,261,has_primary_color::white,primary color white
+261,262,has_primary_color::red,primary color red
+262,263,has_primary_color::buff,primary color buff
+263,264,has_leg_color::blue,leg color blue
+264,265,has_leg_color::brown,leg color brown
+265,266,has_leg_color::iridescent,leg color iridescent
+266,267,has_leg_color::purple,leg color purple
+267,268,has_leg_color::rufous,leg color rufous
+268,269,has_leg_color::grey,leg color gray
+269,270,has_leg_color::yellow,leg color yellow
+270,271,has_leg_color::olive,leg color olive
+271,272,has_leg_color::green,leg color green
+272,273,has_leg_color::pink,leg color pink
+273,274,has_leg_color::orange,leg color orange
+274,275,has_leg_color::black,leg color black
+275,276,has_leg_color::white,leg color white
+276,277,has_leg_color::red,leg color red
+277,278,has_leg_color::buff,leg color buff
+278,279,has_bill_color::blue,bill color blue
+279,280,has_bill_color::brown,bill color brown
+280,281,has_bill_color::iridescent,bill color iridescent
+281,282,has_bill_color::purple,bill color purple
+282,283,has_bill_color::rufous,bill color rufous
+283,284,has_bill_color::grey,bill color gray
+284,285,has_bill_color::yellow,bill color yellow
+285,286,has_bill_color::olive,bill color olive
+286,287,has_bill_color::green,bill color green
+287,288,has_bill_color::pink,bill color pink
+288,289,has_bill_color::orange,bill color orange
+289,290,has_bill_color::black,bill color black
+290,291,has_bill_color::white,bill color white
+291,292,has_bill_color::red,bill color red
+292,293,has_bill_color::buff,bill color buff
+293,294,has_crown_color::blue,crown color blue
+294,295,has_crown_color::brown,crown color brown
+295,296,has_crown_color::iridescent,crown color iridescent
+296,297,has_crown_color::purple,crown color purple
+297,298,has_crown_color::rufous,crown color rufous
+298,299,has_crown_color::grey,crown color gray
+299,300,has_crown_color::yellow,crown color yellow
+300,301,has_crown_color::olive,crown color olive
+301,302,has_crown_color::green,crown color green
+302,303,has_crown_color::pink,crown color pink
+303,304,has_crown_color::orange,crown color orange
+304,305,has_crown_color::black,crown color black
+305,306,has_crown_color::white,crown color white
+306,307,has_crown_color::red,crown color red
+307,308,has_crown_color::buff,crown color buff
+308,309,has_wing_pattern::solid,wing pattern solid
+309,310,has_wing_pattern::spotted,wing pattern spotted
+310,311,has_wing_pattern::striped,wing pattern striped
+311,312,has_wing_pattern::multi-colored,wing pattern multi colored

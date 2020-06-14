@@ -1,0 +1,1 @@
+Please download and extract AwA2-data.zip (https://cvml.ist.ac.at/AwA2/AwA2-data.zip) into this folder in order to run ./extract_feature/extract_feature_map_ResNet_101_AWA2.py

@@ -1,0 +1,1 @@
+Please download and extract img.zip (https://drive.google.com/drive/folders/0B7EVK8r0v71pekpRNUlMS3Z5cUk) into this folder in order to run ./extract_feature/extract_feature_map_ResNet_101_DeepFashion.py

@@ -1,0 +1,1 @@
+Please download and extract xlsa17.zip (http://datasets.d2.mpi-inf.mpg.de/xian/xlsa17.zip) into this folder. This file contains the proposed splits for AWA2, CUB, SUN needed for all files in ./extract_feature/

@@ -1,0 +1,1 @@
+Please download and extract the whole Anno folder (https://drive.google.com/drive/folders/0B7EVK8r0v71pWWxJeGVqMjRkUVE) into this folder in order to run ./extract_feature/extract_annotation_DeepFashion.py
