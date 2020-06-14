@@ -132,12 +132,9 @@ class DAZLE(nn.Module):
             print('WARNING: UNIFORM ATTENTION LEVEL 1')
         if self.uniform_att_2:
             print('WARNING: UNIFORM ATTENTION LEVEL 2')
-        print('new Laplacian smoothing with desire mass {} 4'.format(self.desired_mass))  
-        #print('Negative log likelihood for MAX unseen 5')
         print('Compute Pruning loss {}'.format(self.prob_prune))  
         if self.is_bias:
             print('Add one smoothing')
-#        print('Class agnostic attribute attention with hidden att {}'.format(self.hidden))
         print('Second layer attenion conditioned on image features')
         print('-'*30)  
         
