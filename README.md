@@ -6,12 +6,10 @@ This repository contains the implementation of [Fine-Grained Generalized Zero-Sh
 
 ---
 ## Prerequisites
-+ Python 3.x
-+ PyTorch 1.x.x
-+ sklearn
-+ matplotlib
-+ skimage
-+ scipy
+To install all the dependency packages, please run:
+```
+pip install -r requirements.txt
+```
 
 ---
 ## Data Preparation
