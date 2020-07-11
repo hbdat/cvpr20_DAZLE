@@ -115,8 +115,8 @@ labels = matcontent['labels'].astype(int).squeeze() - 1
 split_path = os.path.join(NFS_path,'data/xlsa17/data/{}/att_splits.mat'.format(dataset))
 matcontent = sio.loadmat(split_path)
 trainval_loc = matcontent['trainval_loc'].squeeze() - 1
-train_loc = matcontent['train_loc'].squeeze() - 1 #--> train_feature = TRAIN SEEN
-val_unseen_loc = matcontent['val_loc'].squeeze() - 1 #--> test_unseen_feature = TEST UNSEEN
+#train_loc = matcontent['train_loc'].squeeze() - 1 #--> train_feature = TRAIN SEEN
+#val_unseen_loc = matcontent['val_loc'].squeeze() - 1 #--> test_unseen_feature = TEST UNSEEN
 test_seen_loc = matcontent['test_seen_loc'].squeeze() - 1
 test_unseen_loc = matcontent['test_unseen_loc'].squeeze() - 1
 att = matcontent['att'].T
@@ -132,8 +132,8 @@ if is_save:
     f.create_dataset('feature_map', data=all_features,compression="gzip")
     f.create_dataset('labels', data=labels,compression="gzip")
     f.create_dataset('trainval_loc', data=trainval_loc,compression="gzip")
-    f.create_dataset('train_loc', data=train_loc,compression="gzip")
-    f.create_dataset('val_unseen_loc', data=val_unseen_loc,compression="gzip")
+#    f.create_dataset('train_loc', data=train_loc,compression="gzip")
+#    f.create_dataset('val_unseen_loc', data=val_unseen_loc,compression="gzip")
     f.create_dataset('test_seen_loc', data=test_seen_loc,compression="gzip")
     f.create_dataset('test_unseen_loc', data=test_unseen_loc,compression="gzip")
     f.create_dataset('att', data=att,compression="gzip")
