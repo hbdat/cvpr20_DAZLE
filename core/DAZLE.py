@@ -196,7 +196,7 @@ class DAZLE(nn.Module):
         Labels = batch_label
             
         if self.is_bias:
-            S_pp = S_pp - self.vec_bias
+            S_pp = S_pp - self.vec_bias         # remove the margin +1/-1 from prediction scores
         
         if not self.is_conservative:  
             S_pp = S_pp[:,self.seenclass]  
@@ -250,13 +250,13 @@ class DAZLE(nn.Module):
         if self.normalize_F and not self.is_conv:  
             Fs = F.normalize(Fs,dim = 1)  
           
-        ## Compatibility score
+        ## Compute attribute score on each image region
         S = torch.einsum('iv,vf,bfr->bir',V_n,self.W_1,Fs) 
         
         if self.is_sigmoid:
             S=torch.sigmoid(S)
         
-        ## Baseline AoA
+        ## Ablation setting
         A_b = Fs.new_full((B,self.dim_att,R),1/R)
         A_b_p = self.att.new_full((B,self.dim_att),fill_value = 1)  
         S_b_p = torch.einsum('bir,bir->bi',A_b,S)  
@@ -264,28 +264,30 @@ class DAZLE(nn.Module):
         ##
         
         
-        ## Attention level 1: spatial attention  
+        ## Dense Attention  
         ## Bi-linear attention  
         A = torch.einsum('iv,vf,bfr->bir',V_n,self.W_2,Fs)   
-        A = F.softmax(A,dim = -1)
-        F_p = torch.einsum('bir,bfr->bif',A,Fs)
+        A = F.softmax(A,dim = -1)                   # compute an attention map for each attribute
+        F_p = torch.einsum('bir,bfr->bif',A,Fs)     # compute attribute-based features
         
         if self.uniform_att_1:
-            S_p = torch.einsum('bir,bir->bi',A_b,S) 
+            S_p = torch.einsum('bir,bir->bi',A_b,S)     # ablation: compute attribute score using average image region features
         else:
-            S_p = torch.einsum('bir,bir->bi',A,S)  
+            S_p = torch.einsum('bir,bir->bi',A,S)       # compute attribute scores from attribute attention maps
         
         if self.non_linear_act:
             S_p = F.relu(S_p)
+        ## 
         
+        ## compute Attention over Attribute
         A_p = torch.einsum('iv,vf,bif->bi',V_n,self.W_3,F_p)
         A_p = torch.sigmoid(A_p) 
         ##  
         
         if self.uniform_att_2:
-            S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_b_p,S_p)
+            S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_b_p,S_p)     # ablation: setting attention over attribute to 1
         else:
-            S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_p,S_p)
+            S_pp = torch.einsum('ki,bi,bi->bik',self.att,A_p,S_p)       # compute the final prediction as the product of semantic scores, attribute scores, and attention over attribute scores
             
         S_attr = torch.einsum('bi,bi->bi',A_b_p,S_p)
             
@@ -307,4 +309,3 @@ class DAZLE(nn.Module):
         package = {'S_pp':S_pp,'Pred_att':Pred_att,'S_b_pp':S_b_pp,'A_p':A_p,'A':A,'S_attr':S_attr}  
           
         return package  
-    
