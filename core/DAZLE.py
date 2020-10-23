@@ -263,9 +263,7 @@ class DAZLE(nn.Module):
         S_b_pp = torch.einsum('ki,bi,bi->bk',self.att,A_b_p,S_b_p)  
         ##
         
-        
-        ## Dense Attention  
-        ## Bi-linear attention  
+        ## compute Dense Attention
         A = torch.einsum('iv,vf,bfr->bir',V_n,self.W_2,Fs)   
         A = F.softmax(A,dim = -1)                   # compute an attention map for each attribute
         F_p = torch.einsum('bir,bfr->bif',A,Fs)     # compute attribute-based features
