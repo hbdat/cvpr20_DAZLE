@@ -296,6 +296,7 @@ class DAZLE(nn.Module):
         else:
             S_pp = torch.sum(S_pp,axis=1)        #[bk] <== [bik]
         
+        # augment prediction scores by adding a margin of 1 to unseen classes and -1 to seen classes
         if self.is_bias:
             self.vec_bias = self.mask_bias*self.bias
             S_pp = S_pp + self.vec_bias
