@@ -56,3 +56,8 @@ If this code is helpful for your research, we would appreciate if you cite the w
   journal = {{IEEE} Conference on Computer Vision and Pattern Recognition},
   year = {2020}}
 ```
+
+---
+## References
+We adapt our dataloader classes from the following project:
+https://github.com/edgarschnfld/CADA-VAE-PyTorch
