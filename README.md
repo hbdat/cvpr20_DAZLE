@@ -4,6 +4,8 @@
 This repository contains the implementation of [Fine-Grained Generalized Zero-Shot Learning via Dense Attribute-Based Attention](http://khoury.neu.edu/home/eelhami/publications/FineGrainedZSL-CVPR20.pdf).
 > In this work, we develop a zero-shot fine-grained recognition with the ability to localize attributes using a dense attribute-based attention and embedding mechanism.
 
+![Image](https://github.com/hbdat/neurIPS20_CompositionZSL/raw/main/fig/high_level_schematic.png)
+
 ---
 ## Prerequisites
 To install all the dependency packages, please run:
@@ -56,3 +58,8 @@ If this code is helpful for your research, we would appreciate if you cite the w
   journal = {{IEEE} Conference on Computer Vision and Pattern Recognition},
   year = {2020}}
 ```
+
+---
+## References
+We adapt our dataloader classes from the following project:
+https://github.com/edgarschnfld/CADA-VAE-PyTorch
