@@ -4,7 +4,7 @@
 This repository contains the implementation of [Fine-Grained Generalized Zero-Shot Learning via Dense Attribute-Based Attention](http://khoury.neu.edu/home/eelhami/publications/FineGrainedZSL-CVPR20.pdf).
 > In this work, we develop a zero-shot fine-grained recognition with the ability to localize attributes using a dense attribute-based attention and embedding mechanism.
 
-![Image](https://github.com/hbdat/neurIPS20_CompositionZSL/raw/main/fig/high_level_schematic.png)
+![Image](https://github.com/hbdat/cvpr20_DAZLE/raw/master/fig/high_level_schematic.png)
 
 ---
 ## Prerequisites
