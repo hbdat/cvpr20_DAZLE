@@ -20,7 +20,7 @@ import pdb
 #%%
 
 class SUNDataLoader():
-    def __init__(self, data_path, device, is_scale = False, is_unsupervised_attr = False,is_balance=True):
+    def __init__(self, data_path, device, is_scale = False, is_balance=True):
 
         print(data_path)
         sys.path.append(data_path)
@@ -38,7 +38,6 @@ class SUNDataLoader():
         self.is_balance = is_balance
         if self.is_balance:
             print('Balance dataloader')
-        self.is_unsupervised_attr = is_unsupervised_attr
         self.read_matdataset()
         self.get_idx_classes()
         self.I = torch.eye(self.allclasses.size(0)).to(device)
