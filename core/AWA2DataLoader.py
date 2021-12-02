@@ -158,41 +158,22 @@ class AWA2DataLoader():
         test_seen_loc = np.array(hf.get('test_seen_loc'))
         test_unseen_loc = np.array(hf.get('test_unseen_loc'))
         
-        if self.is_unsupervised_attr:
-            print('Unsupervised Attr')
-            class_path = './w2v/{}_class.pkl'.format(self.dataset)
-            with open(class_path,'rb') as f:
-                w2v_class = pickle.load(f)
-            assert w2v_class.shape == (50,300)
-            w2v_class = torch.tensor(w2v_class).float()
-            
-            U, s, V = torch.svd(w2v_class)
-            reconstruct = torch.mm(torch.mm(U,torch.diag(s)),torch.transpose(V,1,0))
-            print('sanity check: {}'.format(torch.norm(reconstruct-w2v_class).item()))
-            
-            print('shape U:{} V:{}'.format(U.size(),V.size()))
-            print('s: {}'.format(s))
-            
-            self.w2v_att = torch.transpose(V,1,0).to(self.device)
-            self.att = torch.mm(U,torch.diag(s)).to(self.device)
-            self.normalize_att = torch.mm(U,torch.diag(s)).to(self.device)
-            
-        else:
-            print('Expert Attr')
-            att = np.array(hf.get('att'))
-            
-            print("threshold at zero attribute with negative value")
-            att[att<0]=0
-            
-            self.att = torch.from_numpy(att).float().to(self.device)
-            
-            original_att = np.array(hf.get('original_att'))
-            self.original_att = torch.from_numpy(original_att).float().to(self.device)
-            
-            w2v_att = np.array(hf.get('w2v_att'))
-            self.w2v_att = torch.from_numpy(w2v_att).float().to(self.device)
-            
-            self.normalize_att = self.original_att/100
+        
+        print('Expert Attr')
+        att = np.array(hf.get('att'))
+
+        print("threshold at zero attribute with negative value")
+        att[att<0]=0
+
+        self.att = torch.from_numpy(att).float().to(self.device)
+
+        original_att = np.array(hf.get('original_att'))
+        self.original_att = torch.from_numpy(original_att).float().to(self.device)
+
+        w2v_att = np.array(hf.get('w2v_att'))
+        self.w2v_att = torch.from_numpy(w2v_att).float().to(self.device)
+
+        self.normalize_att = self.original_att/100
         
         print('Finish loading data in ',time.clock()-tic)
         
