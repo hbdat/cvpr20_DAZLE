@@ -27,7 +27,7 @@ mat_path = os.path.join(NFS_path,'data/xlsa17/data/CUB/res101.mat')
 attr_path = './attribute/CUB/new_des.csv'
 
 class CUBDataLoader():
-    def __init__(self, data_path, device, is_scale = False,is_unsupervised_attr = False,is_balance=True):
+    def __init__(self, data_path, device, is_scale = False, is_balance=True):
         print("!!!!!!!!!! Standard Split !!!!!!!!!!")
         print(data_path)
         sys.path.append(data_path)
@@ -48,7 +48,6 @@ class CUBDataLoader():
         self.is_balance = is_balance
         if self.is_balance:
             print('Balance dataloader')
-        self.is_unsupervised_attr = is_unsupervised_attr
         self.read_matdataset()
         self.get_idx_classes()
     
