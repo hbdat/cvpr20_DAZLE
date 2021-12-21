@@ -48,6 +48,11 @@ These scripts create hdf5 files which contain image features and data splits for
 ./notebook/DAZLE_SUN.ipynb
 ```
 
+## Pretrained Models
+Since the training process is not resource-intensive, most experiments can be produced within 30mins.
+
++ If you need the pretrained models, please reach out to me via huynh.dat@northeastern.edu
+
 ---
 ## Citation
 If this code is helpful for your research, we would appreciate if you cite the work:
